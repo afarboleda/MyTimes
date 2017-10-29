@@ -1,21 +1,29 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin:0;
+}
+
 a {
   color: black;
 }
 
+p {
+  border:0;
+  padding: 0;
+  margin:0;
+}
+
 h1{
-  font-family: Georgia;
   font-weight: bold;
   font-size: 40px;
   color: white;
   height: 245px;
 }
 
-header nav {
-  padding-right: 40px;
-}
-
-nav span {
-  padding: 20px 10px;
+h2{
+  font-size: 20px;
+  font-weight: bold;
 }
 
 header {
@@ -25,25 +33,19 @@ header {
   font-size: 14px;
   font-weight: bold;
   border-bottom: 1px solid black;
+  height: 80px;
   width: 100%;
-  justify-content: space-between;
-  margin: 20px;
-}
-
-div .imageBackground {
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
-  height: 225px;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
 }
 
 .logo {
-  border: 1px solid black;
   color: MediumAquamarine;
   display: flex;
   align-items: center;
   padding-left: 15px;
+  margin-left: 15px;
   flex-grow: 1;
 }
 
@@ -51,27 +53,30 @@ div .imageBackground {
   margin-right: 10px;
 }
 
+
+header nav {
+  padding-right: 40px;
+}
+
+nav span {
+  padding: 20px 10px;
+}
+
 .column {
-  border: 1px solid black;
+  font-family: Georgia;
   display: flex;
-  flex-direction: row;
-  padding: 20px;
-  align-items: flex-start;
+  padding-top: 116px;
   justify-content: space-between;
 }
 
-.column div {
-  border: 1px solid black;
-}
-
-.column .large {
+.large {
   display: flex;
   width: 630px;
   flex-direction: column;
-  margin-right: 16px
+  margin-right: 32px;
 }
 
-.column .medium {
+.medium {
   display: flex;
   width: 300px;
   flex-direction: column;
@@ -79,22 +84,61 @@ div .imageBackground {
 
 }
 
-.column .small {
+.small {
   display: flex;
   width: 240px;
   flex-direction: column;
 }
 
+.mainstory{
+  display: block;
+  margin-top: 0px;
+}
+
+.stories {
+  display: flex;
+  justify-content: space-between;
+  margin-top:10px;
+  padding-bottom: 30px;
+  height: 450px;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 250px;
+}
+
+.storytext {
+  font-size: 16px;
+  color: black;
+  display: block;
+  margin: 10px;
+}
+
+div .imageBackground {
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  height: 225px;
+}
+
 .phish {
   background-image: url("../images/img-story-main.png");
+  height: 300px;
 }
 
 .earth {
   background-image: url("../images/img-story-2.png");
+  margin: 50px 0px;
+  height: 500px;
 }
 
 .cameras {
   background-image: url("../images/img-story-3.png");
+  margin: 50px 0px;
+  height: 500px;
 }
 
 .cats {
